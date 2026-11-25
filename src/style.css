@@ -1,0 +1,72 @@
+:root {
+  --morado: #7c3aed;
+  --morado-oscuro: #5b21b6;
+  --morado-claro: #ede9fe;
+  --fondo: #faf8ff;
+}
+
+body { background-color: var(--fondo); color: #2e1065; }
+
+/* Botones y enlaces en morado */
+.btn-morado {
+  background-color: var(--morado);
+  border-color: var(--morado);
+  color: #fff;
+}
+.btn-morado:hover, .btn-morado:focus {
+  background-color: var(--morado-oscuro);
+  border-color: var(--morado-oscuro);
+  color: #fff;
+}
+.btn-outline-morado {
+  border-color: var(--morado);
+  color: var(--morado);
+}
+.btn-outline-morado:hover {
+  background-color: var(--morado);
+  color: #fff;
+}
+a { color: var(--morado); }
+a:hover { color: var(--morado-oscuro); }
+
+/* Navbar */
+.navbar-morado { background-color: var(--morado-oscuro); }
+.navbar-morado .nav-link { color: #ddd6fe; }
+.navbar-morado .nav-link:hover,
+.navbar-morado .nav-link.active { color: #fff; }
+
+/* Tarjetas y formularios */
+.tarjeta {
+  background: #fff;
+  border: 1px solid var(--morado-claro);
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.08);
+}
+.form-control:focus, .form-select:focus {
+  border-color: var(--morado);
+  box-shadow: 0 0 0 0.2rem rgba(124, 58, 237, 0.2);
+}
+.icono-circulo {
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  background: var(--morado-claro);
+  color: var(--morado);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 1.6rem;
+}
+
+/* Hero de inicio */
+.hero {
+  background: linear-gradient(135deg, var(--morado-oscuro), var(--morado));
+  color: #fff;
+  border-radius: 18px;
+}
+
+/* Personajes */
+.personaje-card { transition: transform .15s ease, box-shadow .15s ease; }
+.personaje-card:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(124, 58, 237, 0.18); }
+.personaje-card img { border-radius: 14px 14px 0 0; }
+.badge-morado { background-color: var(--morado-claro); color: var(--morado-oscuro); }
+
+/* Pantalla de error */
+.error-codigo { font-size: 6rem; font-weight: 800; color: var(--morado); line-height: 1; }
