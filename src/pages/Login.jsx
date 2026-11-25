@@ -23,8 +23,7 @@ const Login = () => {
     }
   }
 
-  // como no tenemos una API de login, se buscan los usuarios
-  // que se guardaron en el localStorage desde el Registro
+
   const onSubmit = (data) => {
     const encontrado = buscarPorCorreo(data.usuario);
 

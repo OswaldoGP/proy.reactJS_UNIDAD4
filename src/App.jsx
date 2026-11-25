@@ -10,7 +10,7 @@ import PersonajeDetalle from './pages/PersonajeDetalle';
 import RutasPrivadas from './routes/RutasPrivadas';
 import RutasPublicas from './routes/RutasPublicas';
 
-// basename: la carpeta donde se sube el proyecto (se configura en vite.config.js -> base)
+
 const App = () => {
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL}>
